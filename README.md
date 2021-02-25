@@ -89,7 +89,7 @@ import sys
 import service_registry.services
 
 
-class LoggingService(registry.services.BootableService):
+class LoggingService(service_registry.services.BootableService):
     def boot(self):
         registry_logging.basicConfig(
             format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
