@@ -8,7 +8,7 @@ For instance during the lifecycle of the application you want 2 things:
 let's look an example to understand this further..
 
 # installation
-pip install service_registry
+pip install serviceregistry
 
 # how to use
 
