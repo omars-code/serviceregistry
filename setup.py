@@ -40,7 +40,7 @@ setup(
     description='',
     classifiers=[
         'Development Status :: Stable',
-        'License :: OSI Approved :: General Public License v3 or later (AGPLv3+)',
+        'License :: OSI Approved :: MIT License',
         'Programming Language :: Python :: 3.7',
         'Intended Audience :: Developers'
     ],
@@ -48,7 +48,7 @@ setup(
     package_dir={'': source_path},
     include_package_data=True,
     package_data={package: []},
-    license='AGPL-3.0-or-later',
+    license='MIT License',
     extras_require={
         'test': [
             'pytest'
