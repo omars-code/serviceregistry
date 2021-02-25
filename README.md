@@ -11,18 +11,17 @@ let's look an example to understand this further..
 pip install service_registry
 
 # how to use
+
 ```python
 
-from service_registry.services import Container, Registry
+from serviceregistry.services import Container, Registry
+
 
 def create_container(app):
     container = Container()
 
     container.set(settings.Props.FALCON, app)
     return container
-
-
-
 
 
 def boot(container):
@@ -33,6 +32,7 @@ def boot(container):
 
     service_registry.boot(container)
 
+
 container = create_container(create_app())
 boot(container)
 
@@ -40,10 +40,10 @@ boot(container)
 ```
 
 here we define the props enum as constants to a system vars
+
 ```python
 
-from service_registry.services import Props as BaseProps
-
+from serviceregistry.services import Props as BaseProps
 
 services = [
     LoggingService(),
@@ -63,10 +63,11 @@ class Props(BaseProps):
 ```
 
 and here is the environment service, which registers certain system variables from environment variables
+
 ```python
 import os
 
-from service_registry.services import BootableService, Container
+from serviceregistry.services import BootableService, Container
 
 
 class EnvironmentService(BootableService):
@@ -82,14 +83,15 @@ class EnvironmentService(BootableService):
 ```
 
 Logging service
+
 ```python
 import logging as registry_logging
 
 import sys
-import service_registry.services
+import serviceregistry.services
 
 
-class LoggingService(service_registry.services.BootableService):
+class LoggingService(serviceregistry.services.BootableService):
     def boot(self):
         registry_logging.basicConfig(
             format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",

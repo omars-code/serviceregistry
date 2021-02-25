@@ -37,7 +37,8 @@ setup(
     name=package,
     version=version,
     python_requires='>=3.6',
-    description='',
+    description='Python service registry used as a service container as well as defines and boots '
+                'services(classes with BootableInterface)',
     classifiers=[
         'Development Status :: Stable',
         'License :: OSI Approved :: MIT License',
@@ -45,6 +46,8 @@ setup(
         'Intended Audience :: Developers'
     ],
     packages=packages,
+    maintainer='Omar Shaban',
+    maintainer_email='omars@php.net',
     package_dir={'': source_path},
     include_package_data=True,
     package_data={package: []},
