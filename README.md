@@ -1,4 +1,4 @@
-# service_registry
+# serviceregistry
 Service Registry for python apps
 
 For instance during the lifecycle of the application you want 2 things:
