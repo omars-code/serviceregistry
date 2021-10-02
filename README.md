@@ -15,7 +15,7 @@ pip install serviceregistry
 ```python
 
 from serviceregistry.services import Container, Registry
-
+import meerkat.configurations.app.settings
 
 def create_container(app):
     container = Container()
@@ -42,7 +42,7 @@ boot(container)
 here we define the props enum as constants to a system vars
 
 ```python
-
+# settings.py
 from serviceregistry.services import Props as BaseProps
 
 services = [
