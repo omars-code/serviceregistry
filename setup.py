@@ -38,11 +38,13 @@ setup(
     version=version,
     python_requires='>=3.6',
     description='Python service registry used as a service container as well as defines and boots '
-                'services(classes with BootableInterface)',
+                'services',
     classifiers=[
         'Development Status :: Stable',
         'License :: OSI Approved :: MIT License',
+        'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
         'Intended Audience :: Developers'
     ],
     packages=packages,
