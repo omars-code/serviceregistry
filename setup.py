@@ -39,8 +39,9 @@ setup(
     python_requires='>=3.6',
     description='Python service registry used as a service container as well as defines and boots '
                 'services',
+    long_description=open('README.md').read(),
+    long_description_content_type='text/markdown',
     classifiers=[
-        'Development Status :: Stable',
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',

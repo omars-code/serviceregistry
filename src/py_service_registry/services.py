@@ -29,7 +29,7 @@ class BootableService(ABC):
 
 
 class Registry(object):
-    """ Service serviceregistry is where to register bootable services to be booted
+    """ Service py_service_registry is where to register bootable services to be booted
     """
 
     def __init__(self):
